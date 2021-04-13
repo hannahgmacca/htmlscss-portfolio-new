@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FADACC;
+}
+
+#logo {
+  width: 60%;
+  margin: 0 25%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/*navigation*/
+#nav {
+  overflow: hidden;
+  background-color: #FADACC;
+}
+#nav .icon {
+  background: #FADACC;
+  display: block;
+  color: white;
+  height: 40%;
+  width: 30%;
+}
+#nav #links {
+  display: none;
+  z-index: 99;
+  background: white;
+}
+#nav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  position: relative;
+  z-index: 99;
+}
+
+/*END OF NAV*/
+/*Profile*/
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+#profile {
+  background-color: #FADACC;
+  padding-bottom: 30px;
+  position: relative;
+}
+#profile p {
+  margin: 20px;
+  color: grey;
+  font-size: 14px;
+  line-height: 1.75;
+  text-align: justify;
+}
+#profile h1, #profile h2 {
+  text-align: left;
+  padding: 0 0 10px 20px;
+}
+#profile h1 {
+  font-size: 2.5em;
+}
+#profile h2 {
+  font-size: 2em;
+  color: #6FA8DC;
+}
+
+/*About*/
+#About {
+  background-color: #F9CB9C;
+  min-height: 250px;
+  border-top: beige solid;
+  border-bottom: beige solid;
+}
+#About img {
+  padding-top: 30px;
+  width: 40%;
+  border-radius: 90%;
+  margin: 0 25%;
+}
+#About h2 {
+  text-align: center;
+  text-align: justify;
+  color: white;
+}
+#About p {
+  margin: 20px;
+  color: black;
+  font-size: 14px;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+/*Skills*/
+#skills {
+  background-color: #F9CB9C;
+  min-height: 250px;
+  border-top: beige solid;
+  border-bottom: beige solid;
+  margin: 50px 0 20px 0;
+}
+#skills p {
+  margin: 20px;
+  color: black;
+  font-size: 14px;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 600px) {
+  /*larger than 601px - 768px*/
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+
+  .col-s-2 {
+    width: 16.66%;
+  }
+
+  .col-s-3 {
+    width: 25%;
+  }
+
+  .col-s-4 {
+    width: 33.33%;
+  }
+
+  .col-s-5 {
+    width: 41.66%;
+  }
+
+  .col-s-6 {
+    width: 50%;
+  }
+
+  .col-s-7 {
+    width: 58.33%;
+  }
+
+  .col-s-8 {
+    width: 66.66%;
+  }
+
+  .col-s-9 {
+    width: 75%;
+  }
+
+  .col-s-10 {
+    width: 83.33%;
+  }
+
+  .col-s-11 {
+    width: 91.66%;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /*anything beyoud 769px*/
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
+/* responsive media queries */
+/* For mobile phones: */
+[class*=col-] {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

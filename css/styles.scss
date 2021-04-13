@@ -5,7 +5,130 @@
     box-sizing: border-box;
 }
 
+body {
+  background-color: #FADACC;
+}
+
+#logo {
+    width: 60%;
+    margin: 0 25%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+
 /*navigation*/
+#nav {
+  overflow: hidden;
+  background-color: #FADACC;
+  
+  .icon {
+    background: #FADACC;
+    display: block;
+    color: white;
+    height: 40%;
+    //float: right;
+    width: 30%;
+    
+}
+
+  #links {
+    display: none;
+    z-index: 99;
+    background:white;
+    
+  }
+  a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    position: relative;
+    z-index: 99;
+
+
+  }
+} /*END OF NAV*/
+
+/*Profile*/
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  #profile {
+    background-color: #FADACC;
+    padding-bottom: 30px;
+    position: relative;
+    p {
+      margin: 20px;
+      color: grey;
+      font-size: 14px;
+      line-height: 1.75;
+      text-align: justify;
+    }
+    h1, h2{
+      text-align: left;
+      padding: 0 0 10px 20px;
+      
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    h2 {
+      font-size: 2em;
+      color:#6FA8DC;
+    }
+  }
+
+  /*About*/
+  #About {
+    background-color: #F9CB9C;
+    min-height: 250px;
+    border-top: beige solid;
+    border-bottom: beige solid;
+    img {
+    padding-top: 30px;
+    width: 40%;
+    border-radius: 90%;
+    margin: 0 25%;
+    }
+    h2 {
+      text-align: center;
+      text-align: justify;
+      color: white;
+    }
+    p {
+      margin: 20px;
+      color: black;
+      font-size: 14px;
+      line-height: 1.75;
+      text-align: justify;
+    }
+  }
+
+  /*Skills*/
+    #skills {
+    background-color: #F9CB9C;
+    min-height: 250px;
+    border-top: beige solid;
+    border-bottom: beige solid;
+    margin: 50px 0 20px 0;
+    p {
+      margin: 20px;
+      color: black;
+      font-size: 14px;
+      line-height: 1.75;
+      text-align: justify;
+    }
+    }
 
 @media only screen and (min-width: 600px) {
     /*larger than 601px - 768px*/

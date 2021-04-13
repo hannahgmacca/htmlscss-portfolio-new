@@ -10,22 +10,58 @@
 
 <body>
     <header>
-    <section id="nav">
-        
-    </section>
-
+        <img src="../imgs/logo1.png" alt="logo" id="logo">
+        <section id="nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="../imgs/icon.png" alt="hamburg-logo" id="nav-icon" class="icon" >
+                </a> 
+                <div id="links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+        </section>
     </header>
     <section id="profile">
-
+        <div class="row container">
+        <div class="col-4 col-s-12">
+            <h1>Hello, I am Hannah!</h1>
+            <h2>A full-stack developer in training</h2>
+            </div>
+            <!-- <div class="col-4 col-s-12">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis error, debitis placeat inventore labore necessitatibus suscipit molestiae cumque aspernatur cupiditate commodi eum, earum, officia enim laudantium ratione accusantium aliquam temporibus!</p>
+            </div> -->
+      
     </section>
+
     <section id="About">
-
+        <div class="row container">
+        <img src="../imgs/me.jpeg" alt="Picture of me">
+        <h2>About me</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis error, debitis placeat inventore labore necessitatibus suscipit molestiae cumque aspernatur cupiditate commodi eum, earum, officia enim laudantium ratione accusantium aliquam temporibus!</p>
+    </div>
     </section>
+   
+
     <section id="skills">
-
+        <div class="row container">
+            <h2>Skills</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis error, debitis placeat inventore labore necessitatibus suscipit molestiae cumque aspernatur cupiditate commodi eum, earum, officia enim laudantium ratione accusantium aliquam temporibus!</p>
+        </div>
     </section>
-    <footer></footer>
 
+    <script>
+        function myFunction() {
+          var x = document.getElementById("links");
+        //   var y = document.getElementById("")
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 
 </html>
