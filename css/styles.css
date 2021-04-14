@@ -26,6 +26,22 @@ body {
   background-color: #F9CB9C;
   min-height: 250px;
   font-family: "DM Sans", sans-serif;
+  margin-bottom: 50px;
+}
+.card p {
+  margin: 20px;
+  color: black;
+  font-size: 14px;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.card-image {
+  padding-top: 30px;
+  width: 50%;
+  border-radius: 90%;
+  margin: 0 25%;
+  justify-content: center;
 }
 
 [class*=title] {
@@ -41,6 +57,15 @@ body {
   font-size: 1em;
   color: #6FA8DC;
   font-family: "DM Sans", sans-serif;
+}
+
+.title-3 {
+  text-align: center;
+  color: black;
+}
+
+.title-4 {
+  text-align: center;
 }
 
 /*navigation*/
@@ -94,31 +119,6 @@ body {
 #profile p {
   margin: 20px;
   color: grey;
-  font-size: 14px;
-  line-height: 1.75;
-  text-align: justify;
-}
-
-/*About*/
-#About {
-  background-color: #F9CB9C;
-  min-height: 250px;
-  font-family: "DM Sans", sans-serif;
-}
-#About img {
-  padding-top: 30px;
-  width: 50%;
-  border-radius: 90%;
-  margin: 0 25%;
-  justify-content: center;
-}
-#About h2 {
-  text-align: center;
-  color: black;
-}
-#About p {
-  margin: 20px;
-  color: black;
   font-size: 14px;
   line-height: 1.75;
   text-align: justify;
@@ -224,16 +224,20 @@ footer p, footer a {
     font-size: 2em;
   }
 
-  #About img {
+  .card-image {
     width: 40%;
     margin: 0 30%;
   }
 
-  #About p {
-    font-size: 1.25em;
+  .card p {
+    font-size: 1.5em;
   }
 
-  #About h2 {
+  .title-3 {
+    font-size: 3em;
+  }
+
+  .title-4 {
     font-size: 3em;
   }
 
@@ -325,18 +329,27 @@ footer p, footer a {
     max-width: 80%;
   }
 
-  #About img {
+  .card-image {
     width: 60%;
     margin: 0 20%;
   }
 
-  #About p {
+  .blog-image {
+    width: 60%;
+  }
+
+  .card p {
     font-size: 1em;
     margin: 10% 5%;
   }
 
-  #About h2 {
+  .title-3 {
     font-size: 1.56em;
+    margin-bottom: 20px;
+  }
+
+  .title-4 {
+    font-size: 1em;
     margin-bottom: 20px;
   }
 

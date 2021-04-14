@@ -26,7 +26,25 @@ body {
     background-color: #F9CB9C;
     min-height: 250px;
     font-family: 'DM Sans', sans-serif;
+    margin-bottom: 50px;
+    p {
+      margin: 20px;
+      color: black;
+      font-size: 14px;
+      line-height: 1.75;
+      text-align: justify;
+    }
   }
+
+  .card-image {
+    padding-top: 30px;
+    width: 50%;
+    border-radius: 90%;
+    margin: 0 25%;
+    justify-content: center;
+    
+  }
+
 
   [class*="title"] {
     text-align: left;
@@ -39,6 +57,13 @@ body {
       font-size: 1em;
       color:#6FA8DC;
       font-family: 'DM Sans', sans-serif;
+    }
+    .title-3 {
+      text-align: center;
+      color:black;
+    }
+    .title-4 {
+      text-align: center;
     }
 
 /*navigation*/
@@ -98,49 +123,9 @@ body {
   #profile {
     background-color: #FADACC;
     padding-bottom: 30px;
-   
     p {
       margin: 20px;
       color: grey;
-      font-size: 14px;
-      line-height: 1.75;
-      text-align: justify;
-    }
-    // h1, h2{
-    //   text-align: left;
-    //   padding: 0 0 10px 20px;
-      
-    // }
-    // h1 {
-    //   font-size: 2.5em;
-    // }
-    // h2 {
-    //   font-size: 1em;
-    //   color:#6FA8DC;
-    //   font-family: 'DM Sans', sans-serif;
-    // }
-  }
-
-
-  /*About*/
-  #About {
-    background-color: #F9CB9C;
-    min-height: 250px;
-    font-family: 'DM Sans', sans-serif;
-    img {
-    padding-top: 30px;
-    width: 50%;
-    border-radius: 90%;
-    margin: 0 25%;
-    justify-content: center;
-    }
-    h2 {
-      text-align: center;
-      color:black;
-    }
-    p {
-      margin: 20px;
-      color: black;
       font-size: 14px;
       line-height: 1.75;
       text-align: justify;
@@ -205,10 +190,15 @@ body {
       .col-s-12 {width: 100%;}
       .title{font-size:3em;}
       .title-2{font-size:2em;}
-      #About img{width: 40%; margin: 0 30%;}
-      #About p{font-size: 1.25em;}
-      #About h2{font-size:3em;}
-      #skill img{min-height: 70%; margin: 0 15%; width: 70%}
+      .card-image{width: 40%; 
+       margin: 0 30%;
+      }
+      .card p{font-size: 1.5em;}
+      .title-3{font-size:3em;}
+      .title-4{font-size:3em;}
+      #skill img{min-height: 70%; 
+        margin: 0 15%; 
+        width: 70% }
       #skills p{font-size: 1.7em;}
       #skills h2{font-size:3em;}   
 
@@ -241,20 +231,37 @@ body {
       margin-right: 60px; 
       font-size: 4em;
     }
-    .title-2 {text-align:end; 
+    .title-2 {
+      text-align:end; 
       margin-right: 60px; 
       font-size: 3em;
     }
-    #About {max-width: 80%};
-    #About img {
+    #About {max-width: 80%;}
+
+    .card-image {
       width: 60%; 
       margin: 0 20%;
     }
-    #About p {
+
+    .blog-image {
+      width: 60%; 
+    }
+
+    .card p {
       font-size: 1em; 
       margin: 10% 5%;
+
     }
-    #About h2 {font-size:1.56em; margin-bottom: 20px;}
+
+    .title-3 {
+       font-size:1.56em;
+       margin-bottom: 20px;
+      }
+
+    .title-4 {
+      font-size:1em;
+      margin-bottom: 20px;
+    }
 
     #nav {
       position: absolute; 
