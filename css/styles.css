@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Libre+Baskerville&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@
 
 body {
   background-color: #FADACC;
+  font-family: "Libre Baskerville", serif;
 }
 
 #logo {
@@ -24,6 +26,7 @@ body {
 #nav {
   overflow: hidden;
   background-color: #FADACC;
+  z-index: 99;
 }
 #nav .icon {
   background: #FADACC;
@@ -34,7 +37,7 @@ body {
 }
 #nav #links {
   display: none;
-  z-index: 99;
+  z-index: 98;
   background: white;
 }
 #nav a {
@@ -76,27 +79,27 @@ body {
   font-size: 2.5em;
 }
 #profile h2 {
-  font-size: 2em;
+  font-size: 1em;
   color: #6FA8DC;
+  font-family: "DM Sans", sans-serif;
 }
 
 /*About*/
 #About {
   background-color: #F9CB9C;
   min-height: 250px;
-  border-top: beige solid;
-  border-bottom: beige solid;
+  font-family: "DM Sans", sans-serif;
 }
 #About img {
   padding-top: 30px;
-  width: 40%;
+  width: 50%;
   border-radius: 90%;
   margin: 0 25%;
+  justify-content: center;
 }
 #About h2 {
   text-align: center;
-  text-align: justify;
-  color: white;
+  color: black;
 }
 #About p {
   margin: 20px;
@@ -110,16 +113,36 @@ body {
 #skills {
   background-color: #F9CB9C;
   min-height: 250px;
-  border-top: beige solid;
-  border-bottom: beige solid;
   margin: 50px 0 20px 0;
+  font-family: "DM Sans", sans-serif;
 }
-#skills p {
+#skills h2 {
   margin: 20px;
+  padding: 10px;
+  margin: 0 25%;
   color: black;
-  font-size: 14px;
-  line-height: 1.75;
-  text-align: justify;
+}
+#skills .skill {
+  margin: 10px;
+  min-height: 250px;
+}
+#skills .skill img {
+  width: 100%;
+}
+#skills .skill h3 {
+  text-align: center;
+}
+
+footer {
+  background: black;
+  min-height: 75px;
+  margin-top: 50px;
+}
+footer p, footer a {
+  padding: 20px 20px 0px 20px;
+  text-decoration: none;
+  color: #F9CB9C;
+  font-family: "DM Sans", sans-serif;
 }
 
 @media only screen and (min-width: 600px) {
@@ -172,6 +195,41 @@ body {
   .col-s-12 {
     width: 100%;
   }
+
+  #profile h1 {
+    font-size: 3em;
+  }
+
+  #profile h2 {
+    font-size: 2em;
+  }
+
+  #About img {
+    width: 40%;
+    margin: 0 30%;
+  }
+
+  #About p {
+    font-size: 1.7em;
+  }
+
+  #About h2 {
+    font-size: 3em;
+  }
+
+  #skill img {
+    min-height: 70%;
+    margin: 0 15%;
+    width: 70%;
+  }
+
+  #skills p {
+    font-size: 1.7em;
+  }
+
+  #skills h2 {
+    font-size: 3em;
+  }
 }
 @media only screen and (min-width: 769px) {
   /*anything beyoud 769px*/
@@ -222,6 +280,23 @@ body {
 
   .col-12 {
     width: 100%;
+  }
+
+  .container {
+    margin: 0px 150px;
+  }
+
+  #logo {
+    width: 20%;
+  }
+
+  #About img {
+    width: 30%;
+    margin: 0 15%;
+  }
+
+  #About p {
+    font-size: 1.2em;
   }
 }
 /* responsive media queries */
