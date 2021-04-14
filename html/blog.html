@@ -4,22 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <title>Blog</title>
 </head>
+
 <body>
     <header>
-        <div id="logo"></div> 
-        <nav>
-            <div id="nav-button"></div>
-            <div id="nav-links"></div>
-        </nav>
-
+        <img src="../imgs/logo1.png" alt="logo" id="logo">
+        <section id="nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="../imgs/icon.png" alt="hamburg-logo" id="nav-icon" class="icon" >
+                </a> 
+                <section id="links-flex">
+                    <div id="links">
+                        <a href="index.html">Home</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </section>
+        </section>
     </header>
 
-    <div class="card"></div>
+    <section id="Blog">
+        <div class="row container">
+        <div class="col-12 col-s-12">
+            <h1 class="title">Blog</h1>
+            <h2 class="title-2">Articles on things I find interesting</h2>
+        </div>
+    </section>
 
-    <footer></footer>
+    <section id="Blogs">
+        <div class="row container card">
+            <div class="col-4 col-s-12">
+                <div class="blog"></div>
+                <div class="col-8 col-s-12">
+                <h2>Blog 1</h2>
+                <p>I am a 21 year old student currently living in Burleigh Heads, Gold Coast.
+                I have always had an interest in computer technology, bringing home HTML/CSS magazines home from the newsagency through to changing the RAM and HD in my laptop when i was 13.
+                </div>
+            </p>
+           </div>
+        </div> 
+
+</section> 
+
+    <footer>
+        <p>Copyright Hannah McDonald&copy;</p>
+        <a href="contact.html">Get in touch</a>
+    </footer>
     
+    <script>
+
+        function myFunction() {
+          var x = document.getElementById("links");
+          
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
+
 </html>

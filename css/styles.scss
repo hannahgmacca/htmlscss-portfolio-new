@@ -22,28 +22,58 @@ body {
     width: 100%;
   }
 
+  .card {
+    background-color: #F9CB9C;
+    min-height: 250px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  [class*="title"] {
+    text-align: left;
+    padding: 0 0 10px 20px;
+ }
+    .title {
+      font-size: 2.5em;
+    }
+    .title-2 {
+      font-size: 1em;
+      color:#6FA8DC;
+      font-family: 'DM Sans', sans-serif;
+    }
 
 /*navigation*/
 #nav {
   overflow: hidden;
   background-color: #FADACC;
   z-index: 2;
-  
   .icon {
     background: #FADACC;
     display: block;
     color: white;
     height: 40%;
-    width: 30%;
-    
-}
+    width: 30%;  
+  }
 
   #links {
+    // Teej NOTE:
+    // Refactor #links section.  
+    // Some of the things weren't working because of CSS specificity.
+    // 
+
     display: none;
     z-index: 1;
-    background:white;
-    
+    background:white;  
+    a:hover {
+      background-color: lightskyblue;
+      color: white;
+    }  
+
+    // Add mobile-visible class to add and remove from links class.
+    &.mobile-visible {
+      display: block;
+    }
   }
+
   a {
     color: black;
     padding: 14px 16px;
@@ -53,8 +83,8 @@ body {
     position: relative;
     z-index: 99;
 
-
   }
+
 } /*END OF NAV*/
 
 /*Profile*/
@@ -68,7 +98,6 @@ body {
   #profile {
     background-color: #FADACC;
     padding-bottom: 30px;
-    position: relative;
    
     p {
       margin: 20px;
@@ -77,19 +106,19 @@ body {
       line-height: 1.75;
       text-align: justify;
     }
-    h1, h2{
-      text-align: left;
-      padding: 0 0 10px 20px;
+    // h1, h2{
+    //   text-align: left;
+    //   padding: 0 0 10px 20px;
       
-    }
-    h1 {
-      font-size: 2.5em;
-    }
-    h2 {
-      font-size: 1em;
-      color:#6FA8DC;
-      font-family: 'DM Sans', sans-serif;
-    }
+    // }
+    // h1 {
+    //   font-size: 2.5em;
+    // }
+    // h2 {
+    //   font-size: 1em;
+    //   color:#6FA8DC;
+    //   font-family: 'DM Sans', sans-serif;
+    // }
   }
 
 
@@ -108,8 +137,6 @@ body {
     h2 {
       text-align: center;
       color:black;
-    
-
     }
     p {
       margin: 20px;
@@ -127,9 +154,8 @@ body {
     margin: 50px 0 20px 0;
     font-family: 'DM Sans', sans-serif;
     h2 {
-      margin: 20px;
       padding:10px;
-      margin: 0 25%;
+      margin: 0 40%;
       color: black;
     }
     .skill {
@@ -177,44 +203,89 @@ body {
       .col-s-10 {width: 83.33%;}
       .col-s-11 {width: 91.66%;}
       .col-s-12 {width: 100%;}
-      #profile h1{font-size:3em;}
-      #profile h2{font-size:2em;}
+      .title{font-size:3em;}
+      .title-2{font-size:2em;}
       #About img{width: 40%; margin: 0 30%;}
       #About p{font-size: 1.25em;}
       #About h2{font-size:3em;}
       #skill img{min-height: 70%; margin: 0 15%; width: 70%}
       #skills p{font-size: 1.7em;}
       #skills h2{font-size:3em;}   
+
+      
 }
 
-      @media only screen and (min-width: 769px) {
-        /*anything beyoud 769px*/
-          /* For desktop: */
-          .col-1 {width: 8.33%;}
-          .col-2 {width: 16.66%;}
-          .col-3 {width: 25%;}
-          .col-4 {width: 33.33%;}
-          .col-5 {width: 41.66%;}
-          .col-6 {width: 50%;}
-          .col-7 {width: 58.33%;}
-          .col-8 {width: 66.66%;}
-          .col-9 {width: 75%;}
-          .col-10 {width: 83.33%;}
-          .col-11 {width: 91.66%;}
-          .col-12 {width: 100%;}
-          #logo{width: 20%; margin-left: 10px; margin-top:50px; z-index: 99;}
-          #profile h1{text-align:end; margin-right: 60px; font-size: 4em;}
-          #profile h2{text-align:end; margin-right: 60px; font-size: 3em;}
-          #About {max-width: 80%};
-          #About img{width: 60%; margin: 0 20%;}
-          #About p {font-size: 1em; margin: 10% 5%;}
-          #About h2 {font-size:1.56em; margin-bottom: 20px;}
-          #nav {position: absolute; top: 0px; right: 0; float: right;}
-          #nav .icon {width: 20%; float: right;right: 0px;}
-          #links { position:absolute;}
-          #links a{background-color: white; float: right;}
-          #skills h2 {margin: 0 40%;}
-          
-      
-      }
+@media only screen and (min-width: 769px) {
+  /*anything beyoud 769px*/
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    #logo {
+      width: 20%; 
+      margin-left: 10px; 
+      margin-top:50px; 
+      z-index: 99;
+    }
+    .title {
+      text-align:end; 
+      margin-right: 60px; 
+      font-size: 4em;
+    }
+    .title-2 {text-align:end; 
+      margin-right: 60px; 
+      font-size: 3em;
+    }
+    #About {max-width: 80%};
+    #About img {
+      width: 60%; 
+      margin: 0 20%;
+    }
+    #About p {
+      font-size: 1em; 
+      margin: 10% 5%;
+    }
+    #About h2 {font-size:1.56em; margin-bottom: 20px;}
 
+    #nav {
+      position: absolute; 
+      top: 0px; 
+      right: 0; 
+      float: right;
+    .icon {
+      // TEEJ NOTE: Get rid of picture.
+      display: none;
+      // width: 20%; 
+      // float: right;
+      // right: 0px;
+    }
+
+    #links-flex {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+    #links { 
+      // TEEJ NOTE: Remove the position absolute.  This aligns it on the right.
+      // position:absolute;
+      display:flex;
+      margin: 70px 20px 0px 0px;
+    }
+  
+  #links a {
+    background-color: white; 
+    float: right;
+  }
+  #skills h2 {margin: 0 40%;}
+}
+
+}

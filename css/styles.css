@@ -22,6 +22,27 @@ body {
   width: 100%;
 }
 
+.card {
+  background-color: #F9CB9C;
+  min-height: 250px;
+  font-family: "DM Sans", sans-serif;
+}
+
+[class*=title] {
+  text-align: left;
+  padding: 0 0 10px 20px;
+}
+
+.title {
+  font-size: 2.5em;
+}
+
+.title-2 {
+  font-size: 1em;
+  color: #6FA8DC;
+  font-family: "DM Sans", sans-serif;
+}
+
 /*navigation*/
 #nav {
   overflow: hidden;
@@ -39,6 +60,13 @@ body {
   display: none;
   z-index: 1;
   background: white;
+}
+#nav #links a:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+#nav #links.mobile-visible {
+  display: block;
 }
 #nav a {
   color: black;
@@ -62,7 +90,6 @@ body {
 #profile {
   background-color: #FADACC;
   padding-bottom: 30px;
-  position: relative;
 }
 #profile p {
   margin: 20px;
@@ -70,18 +97,6 @@ body {
   font-size: 14px;
   line-height: 1.75;
   text-align: justify;
-}
-#profile h1, #profile h2 {
-  text-align: left;
-  padding: 0 0 10px 20px;
-}
-#profile h1 {
-  font-size: 2.5em;
-}
-#profile h2 {
-  font-size: 1em;
-  color: #6FA8DC;
-  font-family: "DM Sans", sans-serif;
 }
 
 /*About*/
@@ -117,9 +132,8 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 #skills h2 {
-  margin: 20px;
   padding: 10px;
-  margin: 0 25%;
+  margin: 0 40%;
   color: black;
 }
 #skills .skill {
@@ -202,11 +216,11 @@ footer p, footer a {
     width: 100%;
   }
 
-  #profile h1 {
+  .title {
     font-size: 3em;
   }
 
-  #profile h2 {
+  .title-2 {
     font-size: 2em;
   }
 
@@ -295,13 +309,13 @@ footer p, footer a {
     z-index: 99;
   }
 
-  #profile h1 {
+  .title {
     text-align: end;
     margin-right: 60px;
     font-size: 4em;
   }
 
-  #profile h2 {
+  .title-2 {
     text-align: end;
     margin-right: 60px;
     font-size: 3em;
@@ -332,23 +346,22 @@ footer p, footer a {
     right: 0;
     float: right;
   }
-
   #nav .icon {
-    width: 20%;
-    float: right;
-    right: 0px;
+    display: none;
   }
-
-  #links {
-    position: absolute;
+  #nav #links-flex {
+    display: flex;
+    justify-content: flex-end;
   }
-
-  #links a {
+  #nav #links {
+    display: flex;
+    margin: 70px 20px 0px 0px;
+  }
+  #nav #links a {
     background-color: white;
     float: right;
   }
-
-  #skills h2 {
+  #nav #skills h2 {
     margin: 0 40%;
   }
 }
