@@ -15,25 +15,23 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <img src="../imgs/icon.png" alt="hamburg-logo" id="nav-icon" class="icon" >
                 </a> 
-                <div id="links">
-                    <a href="index.html">Home</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
-                </div>
+                <section id="links-flex">
+                    <div id="links">
+                        <a href="index.html">Home</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </section>
         </section>
     </header>
 
-    <div class="content">
     <section id="profile">
         <div class="row container">
-        <div class="col-4 col-s-12">
+        <div class="col-12 col-s-12">
             <h1>Hello, I am Hannah!</h1>
             <h2>A full-stack developer in training</h2>
         </div>
-            <!-- <div class="col-4 col-s-12">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis error, debitis placeat inventore labore necessitatibus suscipit molestiae cumque aspernatur cupiditate commodi eum, earum, officia enim laudantium ratione accusantium aliquam temporibus!</p>
-            </div> -->     
     </section>
 
     <section id="About">
@@ -43,7 +41,11 @@
                 <h2>About me</h2>
             </div>
             <div class="col-8 col-s-12">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis error, debitis placeat inventore labore necessitatibus suscipit molestiae cumque aspernatur cupiditate commodi eum, earum, officia enim laudantium ratione accusantium aliquam temporibus!</p>
+                <p>I am a 21 year old student currently living in Burleigh Heads, Gold Coast.
+                I have always had an interest in computer technology, bringing home HTML/CSS magazines home from the newsagency through to changing the RAM and HD in my laptop when i was 13.
+                <br><br>
+                Through a combination of my interests in technology and skills in communication, I want to work as a front-end developer to help businesses create a business that works for them.
+            </p>
            </div>
         </div>
     </section>  
@@ -51,37 +53,37 @@
     <section id="skills">
         <div class="row container">
             <h2>Skills</h2>
-            <div class="col-s-1">
+            <div class="col-s-4 col-2">
                 <div class="skill">
                     <img src="../imgs/git.png">
                     <h3>Git</h3>
                 </div>
             </div>
-            <div class="col-s-1">
+            <div class="col-s-4 col-2">
                 <div class="skill">
                     <img src="../imgs/github.png">
                     <h3>Github</h3>
                 </div>
             </div>
-            <div class="col-s-6">
+            <div class="col-s-4 col-2">
                 <div class="skill">
                     <img src="../imgs/html.png">
                     <h3>HTML</h3>
                 </div>
             </div>
-            <div class="col-s-6">
+            <div class="col-s-4 col-2">
                 <div class="skill">
                     <img src="../imgs/CSS.png">
                     <h3>CSS</h3>
                 </div>
             </div>
-            <div class="col-s-6">
+            <div class="col-s-4 col-3">
                 <div class="skill">
                     <img src="../imgs/java.png">
                     <h3>Java</h3>
                 </div>
             </div>
-        </div>
+    
     </section>
 
     <footer>
@@ -93,7 +95,7 @@
 
         function myFunction() {
           var x = document.getElementById("links");
-        //   var y = document.getElementById("")
+          
           if (x.style.display === "block") {
             x.style.display = "none";
           } else {

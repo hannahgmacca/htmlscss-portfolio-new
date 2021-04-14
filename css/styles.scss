@@ -27,7 +27,7 @@ body {
 #nav {
   overflow: hidden;
   background-color: #FADACC;
-  z-index: 99;
+  z-index: 2;
   
   .icon {
     background: #FADACC;
@@ -40,7 +40,7 @@ body {
 
   #links {
     display: none;
-    z-index: 98;
+    z-index: 1;
     background:white;
     
   }
@@ -69,6 +69,7 @@ body {
     background-color: #FADACC;
     padding-bottom: 30px;
     position: relative;
+   
     p {
       margin: 20px;
       color: grey;
@@ -155,6 +156,12 @@ body {
       }
     }
 
+     /* responsive media queries */
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+  }
+
 @media only screen and (min-width: 600px) {
     /*larger than 601px - 768px*/
       /* For tablets: */
@@ -173,13 +180,11 @@ body {
       #profile h1{font-size:3em;}
       #profile h2{font-size:2em;}
       #About img{width: 40%; margin: 0 30%;}
-      #About p{font-size: 1.7em;}
+      #About p{font-size: 1.25em;}
       #About h2{font-size:3em;}
       #skill img{min-height: 70%; margin: 0 15%; width: 70%}
       #skills p{font-size: 1.7em;}
-      #skills h2{font-size:3em;}
-      
-
+      #skills h2{font-size:3em;}   
 }
 
       @media only screen and (min-width: 769px) {
@@ -197,15 +202,19 @@ body {
           .col-10 {width: 83.33%;}
           .col-11 {width: 91.66%;}
           .col-12 {width: 100%;}
-          .container{margin: 0px 150px;}
-          #logo{width: 20%}
-          #About img{width: 30%; margin: 0 15%;}
-          #About p {font-size: 1.2em;}
+          #logo{width: 20%; margin-left: 10px; margin-top:50px; z-index: 99;}
+          #profile h1{text-align:end; margin-right: 60px; font-size: 4em;}
+          #profile h2{text-align:end; margin-right: 60px; font-size: 3em;}
+          #About {max-width: 80%};
+          #About img{width: 60%; margin: 0 20%;}
+          #About p {font-size: 1em; margin: 10% 5%;}
+          #About h2 {font-size:1.56em; margin-bottom: 20px;}
+          #nav {position: absolute; top: 0px; right: 0; float: right;}
+          #nav .icon {width: 20%; float: right;right: 0px;}
+          #links { position:absolute;}
+          #links a{background-color: white; float: right;}
+          #skills h2 {margin: 0 40%;}
+          
+      
       }
-
-      /* responsive media queries */
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
 

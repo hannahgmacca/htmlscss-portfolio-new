@@ -26,7 +26,7 @@ body {
 #nav {
   overflow: hidden;
   background-color: #FADACC;
-  z-index: 99;
+  z-index: 2;
 }
 #nav .icon {
   background: #FADACC;
@@ -37,7 +37,7 @@ body {
 }
 #nav #links {
   display: none;
-  z-index: 98;
+  z-index: 1;
   background: white;
 }
 #nav a {
@@ -145,6 +145,12 @@ footer p, footer a {
   font-family: "DM Sans", sans-serif;
 }
 
+/* responsive media queries */
+/* For mobile phones: */
+[class*=col-] {
+  width: 100%;
+}
+
 @media only screen and (min-width: 600px) {
   /*larger than 601px - 768px*/
   /* For tablets: */
@@ -210,7 +216,7 @@ footer p, footer a {
   }
 
   #About p {
-    font-size: 1.7em;
+    font-size: 1.25em;
   }
 
   #About h2 {
@@ -282,27 +288,69 @@ footer p, footer a {
     width: 100%;
   }
 
-  .container {
-    margin: 0px 150px;
-  }
-
   #logo {
     width: 20%;
+    margin-left: 10px;
+    margin-top: 50px;
+    z-index: 99;
+  }
+
+  #profile h1 {
+    text-align: end;
+    margin-right: 60px;
+    font-size: 4em;
+  }
+
+  #profile h2 {
+    text-align: end;
+    margin-right: 60px;
+    font-size: 3em;
+  }
+
+  #About {
+    max-width: 80%;
   }
 
   #About img {
-    width: 30%;
-    margin: 0 15%;
+    width: 60%;
+    margin: 0 20%;
   }
 
   #About p {
-    font-size: 1.2em;
+    font-size: 1em;
+    margin: 10% 5%;
   }
-}
-/* responsive media queries */
-/* For mobile phones: */
-[class*=col-] {
-  width: 100%;
+
+  #About h2 {
+    font-size: 1.56em;
+    margin-bottom: 20px;
+  }
+
+  #nav {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    float: right;
+  }
+
+  #nav .icon {
+    width: 20%;
+    float: right;
+    right: 0px;
+  }
+
+  #links {
+    position: absolute;
+  }
+
+  #links a {
+    background-color: white;
+    float: right;
+  }
+
+  #skills h2 {
+    margin: 0 40%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
