@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +28,7 @@ body {
   background-color: #F9CB9C;
   min-height: 250px;
   font-family: "DM Sans", sans-serif;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .card p {
   margin: 20px;
@@ -55,7 +57,7 @@ body {
 }
 #contacts .contact h2 {
   margin-left: 20px;
-  color: darkcyan;
+  color: black;
 }
 #contacts .contact h3 {
   margin: 5px 0 20px 20px;
@@ -68,6 +70,10 @@ body {
 }
 #contacts .contact h3 a:hover {
   color: white;
+}
+#contacts #wine {
+  width: 70%;
+  display: none;
 }
 
 .card-image {
@@ -88,7 +94,7 @@ body {
 }
 
 .title-2 {
-  font-size: 1em;
+  font-size: 1.4em;
   color: #6FA8DC;
   font-family: "DM Sans", sans-serif;
 }
@@ -159,38 +165,120 @@ body {
 }
 
 /*Skills*/
-#skills {
-  background-color: #F9CB9C;
-  min-height: 250px;
-  margin: 20px 0 50px 0;
-  font-family: "DM Sans", sans-serif;
+.list {
+  /* BLOG LIST */
 }
-#skills h2 {
+.list h2 {
   padding: 10px;
-  margin: 0 40%;
   color: black;
 }
-#skills .skill {
+.list .skill {
   margin: 10px;
   min-height: 250px;
 }
-#skills .skill img {
+.list .skill img {
   width: 100%;
 }
-#skills .skill h3 {
+.list .skill h3 {
   text-align: center;
 }
-
-footer {
-  background: black;
-  min-height: 75px;
-  margin-top: 50px;
+.list .post {
+  margin: 10% 20%;
+  min-height: 250px;
 }
-footer p, footer a {
-  padding: 20px 20px 0px 20px;
+.list .post img {
+  width: 100%;
+  max-height: 275px;
+  border-radius: 90%;
+}
+.list .post img:hover {
+  opacity: 70%;
+}
+.list .post a {
   text-decoration: none;
-  color: #F9CB9C;
+}
+.list .post a:hover {
+  color: white;
+}
+.list .post h3 {
+  text-align: center;
+  color: black;
+}
+.list .post h4 {
+  text-align: center;
+  font-family: "Noto Serif", serif;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  display: inline-block;
+  margin: 2em 0;
+  height: 70px;
+  background-color: black;
+}
+footer p {
+  text-align: center;
+  padding: 0;
+  padding-left: 10%;
+  color: white;
+  font-size: 1em;
+  line-height: 70px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+footer .copyright {
+  width: 100%;
+}
+footer p {
   font-family: "DM Sans", sans-serif;
+}
+footer .social {
+  width: 100%;
+}
+footer a {
+  float: left;
+  line-height: 70px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+footer .linked {
+  background-color: #1E83AE;
+  font-size: 1.2em;
+  width: 20%;
+}
+footer .linked:hover {
+  background-color: black;
+}
+footer .git {
+  background-color: white;
+  font-size: 1.2em;
+  width: 20%;
+}
+footer .git img {
+  max-width: 20px;
+}
+footer .git:hover {
+  background-color: grey;
+}
+footer .support {
+  background-color: #6dcd9a;
+  font-size: 1em;
+  width: 40%;
+  font-family: "DM Sans", sans-serif;
+}
+footer .support:hover {
+  background-color: black;
+}
+footer .tweet {
+  background-color: lightskyblue;
+  font-size: 1.2em;
+  width: 20%;
+}
+footer .tweet:hover {
+  background-color: black;
 }
 
 /* responsive media queries */
@@ -255,12 +343,16 @@ footer p, footer a {
   }
 
   .title-2 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .card-image {
     width: 40%;
     margin: 0 30%;
+  }
+
+  .card {
+    margin-bottom: 60px;
   }
 
   .card p {
@@ -275,7 +367,7 @@ footer p, footer a {
     font-size: 3em;
   }
 
-  #skill img {
+  #skills img {
     min-height: 70%;
     margin: 0 15%;
     width: 70%;
@@ -285,8 +377,16 @@ footer p, footer a {
     font-size: 1.7em;
   }
 
-  #skills h2 {
+  .list h2 {
     font-size: 3em;
+  }
+
+  #skills h2 {
+    margin: 0 40%;
+  }
+
+  #blog-list h2 {
+    margin: 0 40%;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -368,8 +468,12 @@ footer p, footer a {
     margin: 0 20%;
   }
 
+  .card {
+    margin-bottom: 120px;
+  }
+
   .blog-image {
-    width: 60%;
+    width: 70%;
   }
 
   .card p {
@@ -408,8 +512,37 @@ footer p, footer a {
     background-color: white;
     float: right;
   }
-  #nav #skills h2 {
+  #nav .skills h2 {
     margin: 0 40%;
+  }
+  #nav #blog-list h2 {
+    margin: 0 40%;
+  }
+  #nav .contact {
+    margin-left: 20px;
+    font-size: 1.3;
+    padding-bottom: 3%;
+  }
+  #nav .copyright {
+    width: 25%;
+  }
+  #nav .copyright p {
+    text-align: left;
+  }
+  #nav .social {
+    width: 50%;
+  }
+  #nav .linked {
+    width: 20%;
+  }
+  #nav .git {
+    width: 20%;
+  }
+  #nav .tweet {
+    width: 20%;
+  }
+  #nav .support {
+    width: 20%;
   }
 }
 

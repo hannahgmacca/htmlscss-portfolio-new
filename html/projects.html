@@ -4,22 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Home</title>
 </head>
+
 <body>
     <header>
-        <div id="logo"></div> 
-        <nav>
-            <div id="nav-button"></div>
-            <div id="nav-links"></div>
-        </nav>
-
+        <img src="../imgs/logo1.png" alt="logo" id="logo">
+        <section id="nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="../imgs/icon.png" alt="hamburg-logo" id="nav-icon" class="icon" >
+            </a> 
+            <section id="links-flex">
+                <!-- Javascript will add a class to this line.  eg.  links mobile-visible -->
+                <div id="links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </section>
+        </section>
     </header>
 
-    <div class="card"></div>
+    <section id="profile">
+        <div class="row container">
+        <div class="col-12 col-s-12">
+            <h1 class="title">Resume</h1>
+            <h2 class="title-2">History of my work & education</h2>
+        </div>
+    </section>
 
-    <footer></footer>
-    
+
+    <section id="resume">
+        <div class="row container card">
+            <div class="col-4 col-s-12">
+                <a href="../imgs/Hannah_McDonald_Software.pdf"><img src="../imgs/education.png" alt="Education logo" class="card-image"></a>
+                <a href="../imgs/Hannah_McDonald_Software.pdf"><h2 class="title-3">Full resume</h2></a>
+            </div>
+            <div class="col-8 col-s-12">
+                <p>Through working in various customer service roles, I have built an interest and skill for communications. 
+                <br>
+                Notable roles include:<br><br> 
+                <b>Working in a rural video store (yes some still exist)</b>
+                <br><b>Coles service supervisor</b>
+                <br><b>my current role of a mobile phone technician. </b>
+                <br><br>
+                I have studied Information Technology at university for the past 2 years, and plan to complete my education with Coder Academy in order to become a full-stack developer.
+                <br><br>
+                Feel free to check out my full resume of education, working history and achievements.
+            </p>
+           </div>
+        </div>
+    </section>  
+
+    <section id="skills" class="list">
+        <div class="row container card">
+            <h2>Skills</h2>
+            <div class="col-s-4 col-2">
+                <div class="skill">
+                    <img src="../imgs/git.png">
+                    <h3>Git</h3>
+                </div>
+            </div>
+            <div class="col-s-4 col-2">
+                <div class="skill">
+                    <img src="../imgs/github.png">
+                    <h3>Github</h3>
+                </div>
+            </div>
+            <div class="col-s-4 col-2">
+                <div class="skill">
+                    <img src="../imgs/html.png">
+                    <h3>HTML</h3>
+                </div>
+            </div>
+            <div class="col-s-4 col-2">
+                <div class="skill">
+                    <img src="../imgs/CSS.png">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div class="col-s-4 col-3">
+                <div class="skill">
+                    <img src="../imgs/java.png">
+                    <h3>Java</h3>
+                </div>
+            </div>
+    </section>
+    <footer> 
+        <div class="copyright">
+            <p>&copy Hannah McDonald 2021</p>
+          </div>
+          <div class="social">
+            <a href="contact.html" class="support">Contact Me</a>
+            <a href="https://github.com/hannahgmacca" class="git"><img src="../imgs/github2.png"></a>
+            <a href="https://twitter.com/HannahM34560681" class="tweet">t</a>
+            <a href="https://www.linkedin.com/in/hannahmcdonald42/" class="linked">in</a>
+          </div>
+    </footer>
+    <script>
+
+        function myFunction() {
+
+            // TEEJ Note: 
+            // You can add and remove classes to the links instead of changing the style. 
+            // This allows your code to remain DRY (Don't repeat yourself)
+            // I would also recommend you move your javascript function to its own file.  
+            // (Don't forget to generate a SRI hash.)
+            var x = document.getElementById("links");
+            
+            if (x.classList.contains("mobile-visible")){
+                x.classList.remove("mobile-visible");
+            } else {
+                x.classList.add("mobile-visible");
+            }
+        }
+        
+    </script>
 </body>
+
 </html>
