@@ -12,11 +12,6 @@ body {
   font-family: "Libre Baskerville", serif;
 }
 
-#logo {
-  width: 60%;
-  margin: 0 25%;
-}
-
 .row {
   display: flex;
   justify-content: space-evenly;
@@ -24,6 +19,8 @@ body {
   width: 100%;
 }
 
+/* CARD COMPONENT */
+/* Styles text and images to display in similar layout across different pages of website */
 .card {
   background-color: #F9CB9C;
   min-height: 250px;
@@ -38,12 +35,19 @@ body {
   text-align: justify;
 }
 
-/* Contact details */
+.card-image {
+  padding-top: 30px;
+  width: 50%;
+  border-radius: 90%;
+  margin: 0 25%;
+  justify-content: center;
+}
+
+/* END OF CARD STYLING*/
+/* CONTACT */
+/* Styles contact details on contact page to display in aligned rows */
 #contacts {
   display: flex;
-}
-#contacts #wine {
-  display: none;
 }
 #contacts .contact {
   display: flex;
@@ -75,14 +79,9 @@ body {
   color: white;
 }
 
-.card-image {
-  padding-top: 30px;
-  width: 50%;
-  border-radius: 90%;
-  margin: 0 25%;
-  justify-content: center;
-}
-
+/* END OF CONTACT */
+/* TITLES */
+/* Styles headers across website with consistent theme */
 [class*=title] {
   text-align: left;
   padding: 0 0 10px 20px;
@@ -90,6 +89,7 @@ body {
 
 .title {
   font-size: 2.5em;
+  padding: 0 0 10px 20px;
 }
 
 .title-2 {
@@ -101,13 +101,21 @@ body {
 .title-3 {
   text-align: center;
   color: black;
+  font-size: 1.3em;
 }
 
 .title-4 {
   text-align: center;
 }
 
-/*navigation*/
+/* END OF TITLES */
+/* HEADER STYLING */
+#logo {
+  width: 60%;
+  margin: 0 20%;
+}
+
+/* NAVIGATION */
 #nav {
   overflow: hidden;
   background-color: #FADACC;
@@ -165,15 +173,15 @@ body {
 
 /*Skills*/
 .list {
-  /* BLOG LIST */
+  /* BLOG LIST (INDEX PAGE) */
 }
 .list h2 {
   padding: 10px;
   color: black;
 }
 .list .skill {
-  margin: 10px;
-  min-height: 250px;
+  margin: 20px 20%;
+  min-height: 150px;
 }
 .list .skill img {
   width: 100%;
@@ -184,10 +192,15 @@ body {
 .list .post {
   margin: 10% 20%;
   min-height: 250px;
+  background-color: white;
+}
+.list .post h3, .list .post h4 {
+  font-family: "Libre Baskerville", serif;
 }
 .list .post img {
   width: 100%;
   max-height: 275px;
+  border: white 15px solid;
 }
 .list .post img:hover {
   opacity: 70%;
@@ -201,6 +214,7 @@ body {
 .list .post h3 {
   text-align: center;
   color: black;
+  font-size: 0.75em;
   background-color: white;
 }
 .list .post h3:hover {
@@ -209,8 +223,17 @@ body {
 .list .post h4 {
   text-align: center;
   font-family: "Noto Serif", serif;
-  text-emphasis: none;
   background-color: white;
+  font-size: 0.75em;
+  height: 60px;
+}
+
+/* BLOGS */
+#Blogs .title-3 {
+  font-family: "Libre Baskerville", sans-serif;
+}
+#Blogs .title-4 {
+  font-size: 1em;
 }
 
 /* FOOTER */
@@ -360,7 +383,7 @@ footer .tweet:hover {
   }
 
   .card p {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .title-3 {
@@ -391,6 +414,14 @@ footer .tweet:hover {
 
   #blog-list h2 {
     margin: 0 40%;
+  }
+
+  .blog-image {
+    margin: 0 30%;
+  }
+
+  .list .post img {
+    border: 10px solid white;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -478,6 +509,11 @@ footer .tweet:hover {
 
   .blog-image {
     width: 70%;
+    margin: 0 15%;
+  }
+
+  .list .post img {
+    border: 10px solid white;
   }
 
   .card p {

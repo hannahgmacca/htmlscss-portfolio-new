@@ -12,11 +12,6 @@ body {
   font-family: 'Libre Baskerville', serif;
 }
 
-#logo {
-    width: 60%;
-    margin: 0 25%;
-  }
-
   .row {
     display: flex;
     justify-content: space-evenly;
@@ -24,6 +19,8 @@ body {
     width: 100%;
   }
 
+  /* CARD COMPONENT */
+  /* Styles text and images to display in similar layout across different pages of website */
   .card {
     background-color: #F9CB9C;
     min-height: 250px;
@@ -37,44 +34,7 @@ body {
       text-align: justify;
     }
   }
-
-  /* Contact details */
-  #contacts {
-    display: flex;
-    #wine {
-      display: none;
-    }
-    .contact {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: start;
-      margin-right: 20px;
-      width: 100%;
-      .icon {
-        width: 20px;
-        height: 20px;
-        justify-content: start;
-        margin: 5px 0 20px 20px;
-      }
-      h2 {
-        margin-left: 20px;
-        color:black;
-      }
-      h3 {
-        margin: 5px 0 20px 20px;
-        text-decoration: none;
-        color: black;
-        a {
-          text-decoration: none;
-          color:black;
-          &:hover {
-            color: white;
-          }
-        }
-      }
-    }
-  }
-
+  
   .card-image {
     padding-top: 30px;
     width: 50%;
@@ -84,58 +44,115 @@ body {
     
   }
 
+  /* END OF CARD STYLING*/
 
+  /* CONTACT */
+  /* Styles contact details on contact page to display in aligned rows */
+
+  #contacts {
+    display: flex;
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      margin-right: 20px;
+      width: 100%;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        justify-content: start;
+        margin: 5px 0 20px 20px;
+      }
+    
+      h2 {
+        margin-left: 20px;
+        color:black;
+      }
+
+      h3 {
+        margin: 5px 0 20px 20px;
+        text-decoration: none;
+        color: black;
+
+        a {
+          text-decoration: none;
+          color:black;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  /* END OF CONTACT */
+
+  /* TITLES */
+  /* Styles headers across website with consistent theme */
   [class*="title"] {
     text-align: left;
     padding: 0 0 10px 20px;
  }
+
     .title {
       font-size: 2.5em;
+      padding: 0 0 10px 20px;
+      
     }
+
     .title-2 {
       font-size: 1.4em;
       color:#6FA8DC;
       font-family: 'DM Sans', sans-serif;
     }
+
     .title-3 {
       text-align: center;
       color:black;
+      font-size: 1.3em;
     }
+
     .title-4 {
       text-align: center;
     }
+    /* END OF TITLES */
 
-/*navigation*/
-#nav {
-  overflow: hidden;
-  background-color: #FADACC;
-  z-index: 2;
-  .icon {
-    background: #FADACC;
-    display: block;
-    color: white;
-    height: 40%;
-    width: 30%;  
-  }
-
-  #links {
-    // Teej NOTE:
-    // Refactor #links section.  
-    // Some of the things weren't working because of CSS specificity.
-    // 
-    display: none;
-    z-index: 1;
-    background:white;  
-    a:hover {
-      background-color: lightskyblue;
-      color: white;
-    }  
-
-    // Add mobile-visible class to add and remove from links class.
-    &.mobile-visible {
-      display: block;
+    /* HEADER STYLING */
+    #logo {
+      width: 60%;
+      margin: 0 20%;
     }
-  }
+
+    /* NAVIGATION */
+    #nav {
+      overflow: hidden;
+      background-color: #FADACC;
+      z-index: 2;
+
+    .icon {
+      background: #FADACC;
+      display: block;
+      color: white;
+      height: 40%;
+      width: 30%;  
+    }
+
+    #links {
+      display: none;
+      z-index: 1;
+      background:white;  
+      a:hover {
+        background-color: lightskyblue;
+        color: white;
+      }  
+
+      // Add mobile-visible class to add and remove from links class.
+      &.mobile-visible {
+        display: block;
+      }
+    }
 
   a {
     color: black;
@@ -178,8 +195,8 @@ body {
       color: black;
     }
     .skill{
-      margin: 10px;
-      min-height: 250px;
+      margin: 20px 20%;
+      min-height: 150px;
 
       img {
         width: 100%;
@@ -189,13 +206,20 @@ body {
       }
       
     }
-    /* BLOG LIST */
+    /* BLOG LIST (INDEX PAGE) */
     .post{
       margin: 10% 20%;
       min-height: 250px;
+      background-color: white;
+      //min-width: 300px;
+      h3, h4 {
+        font-family: 'Libre Baskerville', serif;
+      }
       img {
         width: 100%;
         max-height: 275px;
+        border: white 15px solid;
+        //margin: 0 5%;
         &:hover {
           opacity: 70%;
         }
@@ -209,6 +233,7 @@ body {
       h3 {
         text-align: center;
         color: black;
+        font-size: .75em;
         background-color: white;
         &:hover {
           color:lightsalmon;
@@ -217,33 +242,24 @@ body {
       h4 {
         text-align: center;
         font-family: 'Noto Serif', serif;
-        text-emphasis: none;
+        //text-emphasis: none;
         background-color: white;
+        font-size: .75em;
+        height: 60px;
       }
     } 
     }
 
-    // /* LIST OF BLOG POSTS */
-    // .post{
-    //   margin: 30px 25%;
-    //   min-height: 250px;
+    /* BLOGS */
+      #Blogs {
+        .title-3 {
+          font-family: 'Libre Baskerville', sans-serif;
+        }
+        .title-4 {
+          font-size: 1em;
+        }
+      }
 
-    //   img {
-    //     width: 100%;
-    //     max-height: 275px;
-    //     border-radius: 50%;
-    //   }
-    //   a {
-    //     text-decoration: none;
-    //     &:hover {
-    //       color: white;
-    //     }
-    //   }
-    //   h3 {
-    //     text-align: center;
-    //     color: black;
-    //   }
-    // } 
 
     /* FOOTER */
     footer {
@@ -341,26 +357,51 @@ body {
       .col-s-10 {width: 83.33%;}
       .col-s-11 {width: 91.66%;}
       .col-s-12 {width: 100%;}
+
       .title{font-size:3em;}
+    
       .title-2{font-size:2.5em;}
-      .card-image{width: 40%; 
-       margin: 0 30%;
+
+      .card-image {
+        width: 40%; 
+        margin: 0 30%;
       }
+
       .card {
         margin-bottom: 60px;
       }
-      .card p{font-size: 1.5em;}
-      .title-3{font-size:3em;}
-      .title-4{font-size:3em;}
-      #skills img{min-height: 70%; 
-        margin: 0 15%; 
-        width: 70% }
-      #skills p{font-size: 1.7em;}
-      .list h2{font-size:3em;}
-       #skills h2 {margin: 0 40%;}  
-       #blog-list h2 {margin: 0 40%;}
 
-      
+      .card p{font-size: 1em;}
+
+      .title-3{font-size:3em;}
+
+      .title-4{font-size:3em;}
+
+      #skills img {
+        min-height: 70%; 
+        margin: 0 15%; 
+        width: 70% 
+      }
+        
+      #skills p{font-size: 1.7em;}
+
+      .list h2{font-size:3em;}
+
+       #skills h2 {margin: 0 40%;}  
+
+       #blog-list {
+        h2 {
+          margin: 0 40%;
+        }
+      }
+      .blog-image {
+        margin: 0 30%;
+      }
+
+      .list .post img {
+        border: 10px solid white;
+      }
+
 }
 
 @media only screen and (min-width: 769px) {
@@ -385,12 +426,13 @@ body {
       margin-top:50px; 
       z-index: 99;
     }
-    
+
     .title {
       text-align:end; 
       margin-right: 60px; 
       font-size: 4em;
     }
+
     .title-2 {
       text-align:end; 
       margin-right: 60px; 
@@ -410,6 +452,11 @@ body {
     
     .blog-image {
       width: 70%; 
+      margin: 0 15%;
+    }
+
+    .list .post img {
+      border: 10px solid white;
     }
 
     .card p {
@@ -434,21 +481,15 @@ body {
       right: 0; 
       float: right;
     .icon {
-      // TEEJ NOTE: Get rid of picture.
       display: none;
-      // width: 20%; 
-      // float: right;
-      // right: 0px;
     }
 
     #links-flex {
       display: flex;
       justify-content: flex-end;
-  }
+    }
 
     #links { 
-      // TEEJ NOTE: Remove the position absolute.  This aligns it on the right.
-      // position:absolute;
       display:flex;
       margin: 70px 20px 0px 0px;
     }
@@ -456,8 +497,10 @@ body {
   #links a {
     background-color: white; 
     float: right;
-  }
+   }
+  
   .skills h2 {margin: 0 40%;}
+
   #blog-list h2 {margin: 0 40%;}
 
   .contact {
@@ -465,16 +508,15 @@ body {
     font-size: 1.3;
     padding-bottom: 3%;
   }
-
   .copyright {
     width: 25%;
     p {
       text-align: left;
     }
-  }
-  .social {
+    }
+    .social {
     width: 50%;
-  }
+    }
     .linked {
       width: 20%;
     }
