@@ -47,38 +47,53 @@ body {
 /* CONTACT */
 /* Styles contact details on contact page to display in aligned rows */
 #contacts {
-  display: flex;
+  display: flexbox;
 }
-#contacts .contact {
+#contacts .contact-detail {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   margin-right: 20px;
   width: 100%;
 }
-#contacts .contact .icon {
+#contacts .contact-detail .icon {
   width: 20px;
   height: 20px;
   justify-content: start;
   margin: 5px 0 20px 20px;
 }
-#contacts .contact h2 {
+#contacts .contact-detail h2 {
   margin-left: 20px;
   color: black;
 }
-#contacts .contact h3 {
+#contacts .contact-detail h3 {
   margin: 5px 0 20px 20px;
   text-decoration: none;
   color: black;
 }
-#contacts .contact h3 a {
+#contacts .contact-detail h3 a {
   text-decoration: none;
   color: black;
 }
-#contacts .contact h3 a:hover {
+#contacts .contact-detail h3 a:hover {
   color: white;
 }
 
+/* RESUME */
+#resume a {
+  text-decoration: none;
+}
+#resume title-3:hover {
+  background-color: white;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 /* END OF CONTACT */
 /* TITLES */
 /* Styles headers across website with consistent theme */
@@ -171,7 +186,7 @@ body {
   text-align: justify;
 }
 
-/*Skills*/
+/*SKILLS*/
 .list {
   /* BLOG LIST (INDEX PAGE) */
 }
@@ -250,12 +265,13 @@ footer p {
   padding-left: 10%;
   color: white;
   font-size: 1em;
-  line-height: 70px;
+  line-height: 50px;
   text-transform: capitalize;
   letter-spacing: 1px;
 }
 footer .copyright {
   width: 100%;
+  background-color: black;
 }
 footer p {
   font-family: "DM Sans", sans-serif;
@@ -506,6 +522,10 @@ footer .tweet:hover {
   .card {
     margin-bottom: 120px;
   }
+  .card p {
+    font-size: 1em;
+    margin: 10% 5%;
+  }
 
   .blog-image {
     width: 70%;
@@ -514,11 +534,6 @@ footer .tweet:hover {
 
   .list .post img {
     border: 10px solid white;
-  }
-
-  .card p {
-    font-size: 1em;
-    margin: 10% 5%;
   }
 
   .title-3 {
@@ -552,6 +567,10 @@ footer .tweet:hover {
     background-color: white;
     float: right;
   }
+  #nav .contacts {
+    position: absolute;
+    left: 0px;
+  }
   #nav .skills h2 {
     margin: 0 40%;
   }
@@ -560,7 +579,7 @@ footer .tweet:hover {
   }
   #nav .contact {
     margin-left: 20px;
-    font-size: 1.3;
+    font-size: 2em;
     padding-bottom: 3%;
   }
   #nav .copyright {

@@ -26,7 +26,7 @@ body {
     min-height: 250px;
     font-family: 'DM Sans', sans-serif;
     margin-bottom: 100px;
-    p {
+    p{
       margin: 20px;
       color: black;
       font-size: 14px;
@@ -48,34 +48,28 @@ body {
 
   /* CONTACT */
   /* Styles contact details on contact page to display in aligned rows */
-
   #contacts {
-    display: flex;
-
-    .contact {
+    display: flexbox;
+    .contact-detail {
       display: flex;
       flex-wrap: wrap;
       justify-content: start;
       margin-right: 20px;
       width: 100%;
-
       .icon {
         width: 20px;
         height: 20px;
         justify-content: start;
         margin: 5px 0 20px 20px;
-      }
-    
+      }  
       h2 {
         margin-left: 20px;
         color:black;
       }
-
       h3 {
         margin: 5px 0 20px 20px;
         text-decoration: none;
         color: black;
-
         a {
           text-decoration: none;
           color:black;
@@ -87,6 +81,26 @@ body {
       }
     }
   }
+
+  /* RESUME */
+  #resume {
+    a {
+      text-decoration: none;
+    }
+     title-3:hover {
+        background-color: white;
+      }
+    }
+  
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
   /* END OF CONTACT */
 
   /* TITLES */
@@ -187,8 +201,7 @@ body {
     }
   }
 
-  /*Skills*/
-
+  /*SKILLS*/
     .list {
     h2 {
       padding:10px;
@@ -274,12 +287,13 @@ body {
         padding-left: 10%;
         color: white;
         font-size: 1em;
-        line-height: 70px;
+        line-height: 50px;
         text-transform: capitalize;
         letter-spacing: 1px;
        } 
         .copyright  {
           width: 100%;
+          background-color: black
         }
         p{
           font-family: 'DM Sans', sans-serif;
@@ -448,6 +462,10 @@ body {
 
     .card {
       margin-bottom: 120px;
+      p {
+        font-size: 1em; 
+      margin: 10% 5%;
+      }
     }
     
     .blog-image {
@@ -457,12 +475,6 @@ body {
 
     .list .post img {
       border: 10px solid white;
-    }
-
-    .card p {
-      font-size: 1em; 
-      margin: 10% 5%;
-
     }
 
     .title-3 {
@@ -497,15 +509,20 @@ body {
   #links a {
     background-color: white; 
     float: right;
-   }
-  
+     }
+     
+      .contacts {
+        position: absolute;
+        left: 0px;
+      }
+
   .skills h2 {margin: 0 40%;}
 
   #blog-list h2 {margin: 0 40%;}
 
   .contact {
     margin-left: 20px;
-    font-size: 1.3;
+    font-size: 2em;
     padding-bottom: 3%;
   }
   .copyright {
@@ -516,6 +533,7 @@ body {
     }
     .social {
     width: 50%;
+
     }
     .linked {
       width: 20%;
