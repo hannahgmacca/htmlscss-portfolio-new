@@ -37,9 +37,9 @@ body {
 
 .card-image {
   padding-top: 30px;
-  width: 50%;
+  width: 60%;
   border-radius: 90%;
-  margin: 0 25%;
+  margin: 0 20%;
   justify-content: center;
 }
 
@@ -117,6 +117,7 @@ body {
   text-align: center;
   color: black;
   font-size: 1.3em;
+  margin: 0 20%;
 }
 
 .title-4 {
