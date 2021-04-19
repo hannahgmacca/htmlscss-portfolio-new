@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <img src="../imgs/logo1.png" alt="logo" id="logo">
+        <section id="nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="../imgs/icon.png" alt="hamburg-logo" id="nav-icon" class="icon" >
+            </a> 
+            <section id="links-flex">
+                <!-- Javascript will add a class to this line.  eg.  links mobile-visible -->
+                <div id="links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </section>
+        </section>
+    </header>
+
+    <section id="profile">
+        <div class="row container">
+        <div class="col-12 col-s-12">
+            <h1 class="title">Contact</h1>
+            <h2 class="title-2">Get in touch with me!</h2>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="row container card">
+            <div class="contacts">
+                <div class="contact-detail">
+                    <img src="../imgs/phone.png" alt="Phone icon" class="icon">
+                    <h2>Phone: </h2>
+                    <h3> 0478 961 223</h3>
+                </div>
+            <div class="contact-detail">
+                <img src="../imgs/email.png" alt="email icon" class="icon">
+                <h2>Email: </h2>
+                <h3>hannahgmacca@gmail.com</h3>
+        </div>
+            <div class="contact-detail">
+                <img src="../imgs/linkedin.png" alt="linkedin icon" class="icon">
+                <h2>Linkedin: </h2>
+                <h3><a href="https://www.linkedin.com/in/hannahmcdonald42/">linkedin.com/in/hannahmcdonald42/</a></h3>
+            </div>
+            <div class="contact-detail">
+                <img src="../imgs/github2.png" alt="GitHub icon" class="icon">
+                <h2 class="">GitHub: </h2>
+                <h3><a href="https://github.com/hannahgmacca">https://github.com/hannahgmacca</a></h3>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <footer> 
+          <div class="social">
+            <a href="contact.html" class="support">Contact Me</a>
+            <a href="#" class="git"><img src="../imgs/github2.png"></a>
+            <a href="#" class="tweet">t</a>
+            <a href="#" class="linked">in</a>
+          </div>
+          <div class="copyright">
+            <p>&copy Hannah McDonald 2021</p>
+          </div>
+    </footer>
+    
+    <script>
+
+        function myFunction() {
+
+            // TEEJ Note: 
+            // You can add and remove classes to the links instead of changing the style. 
+            // This allows your code to remain DRY (Don't repeat yourself)
+            // I would also recommend you move your javascript function to its own file.  
+            // (Don't forget to generate a SRI hash.)
+            var x = document.getElementById("links");
+            
+            if (x.classList.contains("mobile-visible")){
+                x.classList.remove("mobile-visible");
+            } else {
+                x.classList.add("mobile-visible");
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

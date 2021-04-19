@@ -99,7 +99,6 @@ body {
 /* Styles headers across website with consistent theme */
 [class*=title] {
   text-align: left;
-  padding: 0 0 10px 20px;
 }
 
 .title {
@@ -111,6 +110,7 @@ body {
   font-size: 1.4em;
   color: #6FA8DC;
   font-family: "DM Sans", sans-serif;
+  padding: 0 0 10px 20px;
 }
 
 .title-3 {

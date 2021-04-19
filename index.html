@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <img src="../imgs/logo1.png" alt="logo" id="logo">
+        <section id="nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="../imgs/icon.png" alt="hamburg-logo" id="nav-icon" class="icon" >
+            </a> 
+            <section id="links-flex">
+                <!-- Javascript will add a class to this line.  eg.  links mobile-visible -->
+                <div id="links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </section>
+        </section>
+    </header>
+
+    <section id="profile">
+        <div class="row container">
+        <div class="col-12 col-s-12">
+            <h1 class="title">Hello, I'm Hannah!</h1>
+            <h2 class="title-2">A full-stack developer in training</h2>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class="row container card">
+            <div class="col-4 col-s-12">
+                <img src="../imgs/me.jpeg" alt="Picture of me" class="card-image">
+                <h2 class="title-3">About me</h2>
+            </div>
+            <div class="col-8 col-s-12">
+                <p>I'm a 21 year old student living on the Gold Coast and studying full-stack web development at Coder Academy. <br>
+                <br>
+                My primary employment experience is customer service. From being a cashier at Coles to fixing phones at a repair shop, I love interacting with people in order to help them reach a solution.
+                I aim to use my skills in problem solving and communication to one day becoming a front-end developer. 
+                <br><br>
+            </p>
+           </div>
+        </div>
+    </section>  
+
+    <section id="blog-list" class="list">
+        <div class="row container card">
+            <h2>Blogs</h2>
+       
+            <div class="col-s-5 col-4">
+                <div class="post">
+                    <a href="blog.html"><img src="../imgs/kombucha.jpg"></a>
+                    <a href="blog.html"><h3>Kombucha Chronicles</h3></a>
+                    <h4>9/02/21</h4>
+                </div>
+            </div>
+            <div class="col-s-5 col-4">
+                <div class="post">
+                    <a href="blog.html"><img src="../imgs/plants.jpg"></a>
+                    <a href="blog.html"><h3>How to treat your plants for gnats</h3></a>
+                    <h4>14/02/21</h4>
+                </div>
+            </div>
+            <div class="col-s-5 col-4">
+                <div class="post">
+                    <a href="blog.html"><img src="../imgs/computer.jpg"></a>
+                    <a href="blog.html"><h3>Maintaining focus while studying at home</h3></a>
+                    <h4>17/02/21</h4>
+                </div>
+            </div>
+            <div class="col-s-5 col-4">
+                <div class="post">
+                    <a href="blog.html"><img src="../imgs/ocean.jpg"></a>
+                    <a href="blog.html"><h3>The work-life balance</h3></a>
+                    <h4>14/05/21</h4>
+                </div>
+            </div>
+            <div class="col-s-5 col-4">
+                <div class="post">
+                    <a href="blog.html"><img src="../imgs/healthy-food.jpg"></a>
+                    <a href="blog.html"><h3>Ensuring a balanced diet on a busy schedule</h3></a>
+                    <h4>14/06/21</h4>
+                </div>
+            </div>
+    </section>
+
+    <section id="skills" class="list">
+        <div class="row container card">
+            <h2>Skills</h2>
+            <div class="col-s-4 col-2">
+                <div class="skill">
+                    <img src="../imgs/git.png">
+                    <h3>Git</h3>
+                </div>
+            </div>
+            <div class="col-s-4 col-2">
+                <div class="skill">
+                    <img src="../imgs/github.png">
+                    <h3>Github</h3>
+                </div>
+            </div>
+            <div class="col-s-4 col-2">
+                <div class="skill">
+                    <img src="../imgs/html.png">
+                    <h3>HTML</h3>
+                </div>
+            </div>
+            <div class="col-s-4 col-2">
+                <div class="skill">
+                    <img src="../imgs/CSS.png">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div class="col-s-4 col-2">
+                <div class="skill">
+                    <img src="../imgs/java.png">
+                    <h3>Java</h3>
+                </div>
+            </div>
+    </section>
+
+    <footer> 
+          <div class="social">
+            <a href="contact.html" class="support">Contact Me</a>
+            <a href="https://github.com/hannahgmacca" class="git"><img src="../imgs/github2.png"></a>
+            <a href="https://twitter.com/HannahM34560681" class="tweet">t</a>
+            <a href="https://www.linkedin.com/in/hannahmcdonald42/" class="linked">in</a>
+          </div>
+          <div class="copyright">
+            <p>&copy Hannah McDonald 2021</p>
+          </div>
+    </footer>
+    
+    <script>
+
+        function myFunction() {
+
+            // TEEJ Note: 
+            // You can add and remove classes to the links instead of changing the style. 
+            // This allows your code to remain DRY (Don't repeat yourself)
+            // I would also recommend you move your javascript function to its own file.  
+            // (Don't forget to generate a SRI hash.)
+            var x = document.getElementById("links");
+            
+            if (x.classList.contains("mobile-visible")){
+                x.classList.remove("mobile-visible");
+            } else {
+                x.classList.add("mobile-visible");
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
