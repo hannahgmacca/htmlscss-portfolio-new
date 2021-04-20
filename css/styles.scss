@@ -23,7 +23,7 @@ body {
   /* Styles text and images to display in similar layout across different pages of website */
   .card {
     background-color: #F9CB9C;
-    min-height: 250px;
+    //min-height: 250px;
     font-family: 'DM Sans', sans-serif;
     margin-bottom: 100px;
     p{
@@ -43,6 +43,7 @@ body {
     justify-content: center;
     
   }
+  
 
   /* END OF CARD STYLING*/
 
@@ -64,7 +65,7 @@ body {
       }  
       h2 {
         margin-left: 20px;
-        color:black;
+        color: aliceblue;
       }
       h3 {
         margin: 5px 0 20px 20px;
@@ -80,6 +81,39 @@ body {
         }
       }
     }
+  }
+
+  /* CONTACT FORM */
+  
+  .contact-form{
+  padding: 200px;
+  max-height: 500px;
+  }
+  input[type=text], select, textarea {
+    width:100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+ 
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
   }
 
   /* RESUME */
@@ -112,7 +146,7 @@ body {
 
     .title {
       font-size: 2.5em;
-      padding: 0 0 10px 20px;
+      padding: 0 0 10px 10px;
       
     }
 
@@ -514,10 +548,12 @@ body {
     float: right;
      }
      
-      .contacts {
-        position: absolute;
-        left: 0px;
-      }
+        // #contacts
+        //  {.card {
+        //   justify-content: left;
+        //  }
+        // }
+      
 
   .skills h2 {margin: 0 40%;}
 

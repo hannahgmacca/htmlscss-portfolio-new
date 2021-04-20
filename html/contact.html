@@ -38,18 +38,13 @@
     <section id="contacts">
         <div class="row container card">
             <div class="contacts">
-                <div class="contact-detail">
-                    <img src="../imgs/phone.png" alt="Phone icon" class="icon">
-                    <h2>Phone: </h2>
-                    <h3> 0478 961 223</h3>
-                </div>
             <div class="contact-detail">
                 <img src="../imgs/email.png" alt="email icon" class="icon">
                 <h2>Email: </h2>
                 <h3>hannahgmacca@gmail.com</h3>
         </div>
             <div class="contact-detail">
-                <img src="../imgs/linkedin.png" alt="linkedin icon" class="icon">
+                <img src="../imgs/linkedin2.png" alt="linkedin icon" class="icon">
                 <h2>Linkedin: </h2>
                 <h3><a href="https://www.linkedin.com/in/hannahmcdonald42/">linkedin.com/in/hannahmcdonald42/</a></h3>
             </div>
@@ -61,6 +56,28 @@
         </div>
         </div>
     </section>
+
+    <div class="row container card contact-form">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Contact type:</label>
+          <select id="country" name="Contact type:">
+            <option value="phone">SMS</option>
+            <option value="canada">Call</option>
+            <option value="usa">Email</option>
+          </select>
+
+          <label for="lname">Contact</label>
+          <input type="text" id="lname" name="lastname" placeholder="Email or Phone number">
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
 
 
     <footer> 
