@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif@1&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +12,8 @@ body {
   background-color: #FADACC;
   font-family: 'Libre Baskerville', serif;
 }
-
+/*ROW*/
+/* Styles all content to into flexbox */
   .row {
     display: flex;
     justify-content: space-evenly;
@@ -23,7 +25,6 @@ body {
   /* Styles text and images to display in similar layout across different pages of website */
   .card {
     background-color: #F9CB9C;
-    //min-height: 250px;
     font-family: 'DM Sans', sans-serif;
     margin-bottom: 100px;
     p{
@@ -34,7 +35,7 @@ body {
       text-align: justify;
     }
   }
-  
+/* Card image styles sizing and layout for images on cards */
   .card-image {
     padding-top: 30px;
     width: 60%;
@@ -43,8 +44,6 @@ body {
     justify-content: center;
     
   }
-  
-
   /* END OF CARD STYLING*/
 
   /* CONTACT */
@@ -74,7 +73,6 @@ body {
         a {
           text-decoration: none;
           color:black;
-
           &:hover {
             color: white;
           }
@@ -84,11 +82,12 @@ body {
   }
 
   /* CONTACT FORM */
-  
-  .contact-form{
-  padding: 200px;
+  .contact-form {
+  padding: 10%;
   max-height: 500px;
+  min-width: 50px;
   }
+
   input[type=text], select, textarea {
     width:100%;
     padding: 20px;
@@ -100,8 +99,6 @@ body {
     resize: vertical;
   }
 
- 
-  
   input[type=submit] {
     background-color: #4CAF50;
     color: white;
@@ -121,11 +118,11 @@ body {
     a {
       text-decoration: none;
     }
+
      title-3:hover {
         background-color: white;
       }
     }
-  
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
@@ -134,15 +131,13 @@ body {
       margin-top: 0;
     }
   }
-
   /* END OF CONTACT */
 
   /* TITLES */
   /* Styles headers across website with consistent theme */
   [class*="title"] {
     text-align: left;
-    //padding: 0 0 10px 20px;
- }
+  }
 
     .title {
       font-size: 2.5em;
@@ -215,10 +210,10 @@ body {
     z-index: 99;
 
   }
+} 
+/*END OF NAV*/
 
-} /*END OF NAV*/
-
-/*Profile*/
+/*PROFILE*/
   .row {
     display: flex;
     justify-content: space-evenly;
@@ -237,31 +232,30 @@ body {
       text-align: justify;
     }
   }
+/*END OF PROFILE*/
 
-  /*SKILLS*/
-    .list {
+/*SKILLS*/
+  .list {
     h2 {
       padding:10px;
       color: black;
     }
-    .skill{
+    .skill {
       margin: 20px 20%;
       min-height: 150px;
-
-      img {
-        width: 100%;
+        img {
+          width: 100%;
       }
       h3 {
         text-align: center;
       }
-      
-    }
-    /* BLOG LIST (INDEX PAGE) */
+  }
+
+  /*BLOG LIST (INDEX PAGE)*/
     .post{
       margin: 10% 20%;
       min-height: 250px;
       background-color: white;
-      //min-width: 300px;
       h3, h4 {
         font-family: 'Libre Baskerville', serif;
       }
@@ -269,7 +263,6 @@ body {
         width: 100%;
         max-height: 275px;
         border: white 15px solid;
-        //margin: 0 5%;
         &:hover {
           opacity: 70%;
         }
@@ -292,13 +285,13 @@ body {
       h4 {
         text-align: center;
         font-family: 'Noto Serif', serif;
-        //text-emphasis: none;
         background-color: white;
         font-size: .75em;
         height: 60px;
       }
-    } 
+     } 
     }
+    /*END OF BLOG LIST*/       
 
     /* BLOGS */
       #Blogs {
@@ -309,7 +302,6 @@ body {
           font-size: 1em;
         }
       }
-
 
     /* FOOTER */
     footer {
@@ -332,7 +324,7 @@ body {
           width: 100%;
           background-color: black
         }
-        p{
+        p {
           font-family: 'DM Sans', sans-serif;
         }
        .social {
@@ -344,8 +336,7 @@ body {
         text-decoration: none;
         color: white;
         text-align: center;
-        font-weight: bold; 
-        
+        font-weight: bold;
         }
        .linked {
         background-color: #1E83AE;
@@ -355,7 +346,6 @@ body {
           background-color: black;
         }
       }
-      
       .git {
         background-color: white;
         font-size:  1.2em;
@@ -367,7 +357,6 @@ body {
           background-color: grey;
         }
       }
-  
        .support {
         background-color: #6dcd9a;
         font-size: 1em;
@@ -386,6 +375,7 @@ body {
         }
       }
     }
+    /*END OF FOOTER*/
     
      /* responsive media queries */
     /* For mobile phones: */
@@ -452,7 +442,6 @@ body {
       .list .post img {
         border: 10px solid white;
       }
-
 }
 
 @media only screen and (min-width: 769px) {
@@ -512,6 +501,7 @@ body {
 
     .list .post img {
       border: 10px solid white;
+      max-height: none;
     }
 
     .title-3 {
@@ -547,17 +537,12 @@ body {
     background-color: white; 
     float: right;
      }
-     
-        // #contacts
-        //  {.card {
-        //   justify-content: left;
-        //  }
-        // }
-      
 
   .skills h2 {margin: 0 40%;}
 
   #blog-list h2 {margin: 0 40%;}
+
+  .contact-form: {padding: 50%}
 
   .contact {
     margin-left: 20px;

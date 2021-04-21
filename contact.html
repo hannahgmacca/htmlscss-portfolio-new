@@ -36,24 +36,22 @@
     </section>
 
     <section id="contacts">
-        <div class="row container card">
-            <div class="contacts">
+        <div class="row container card contacts">
             <div class="contact-detail">
                 <img src="../imgs/email.png" alt="email icon" class="icon">
                 <h2>Email: </h2>
-                <h3>hannahgmacca@gmail.com</h3>
+                <h3><a href="mailto:hannahgmacca@gmail.com">hannahgmacca@gmail.com</a></h3>
         </div>
             <div class="contact-detail">
                 <img src="../imgs/linkedin2.png" alt="linkedin icon" class="icon">
                 <h2>Linkedin: </h2>
-                <h3><a href="https://www.linkedin.com/in/hannahmcdonald42/">linkedin.com/in/hannahmcdonald42/</a></h3>
+                <h3><a href="https://www.linkedin.com/in/hannahmcdonald42/">@hannahmcdonald42</a></h3>
             </div>
             <div class="contact-detail">
                 <img src="../imgs/github2.png" alt="GitHub icon" class="icon">
                 <h2 class="">GitHub: </h2>
-                <h3><a href="https://github.com/hannahgmacca">https://github.com/hannahgmacca</a></h3>
+                <h3><a href="https://github.com/hannahgmacca">@hannahgmacca</a></h3>
             </div>
-        </div>
         </div>
     </section>
 
@@ -61,7 +59,7 @@
         <form action="/action_page.php">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
+
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
       
@@ -79,7 +77,6 @@
         </form>
       </div>
 
-
     <footer> 
           <div class="social">
             <a href="contact.html" class="support">Contact Me</a>
@@ -92,25 +89,7 @@
           </div>
     </footer>
     
-    <script>
+    <script src="scripts.js"></script>
 
-        function myFunction() {
-
-            // TEEJ Note: 
-            // You can add and remove classes to the links instead of changing the style. 
-            // This allows your code to remain DRY (Don't repeat yourself)
-            // I would also recommend you move your javascript function to its own file.  
-            // (Don't forget to generate a SRI hash.)
-            var x = document.getElementById("links");
-            
-            if (x.classList.contains("mobile-visible")){
-                x.classList.remove("mobile-visible");
-            } else {
-                x.classList.add("mobile-visible");
-            }
-        }
-        
-    </script>
-</body>
-
+    </body>
 </html>

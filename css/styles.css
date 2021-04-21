@@ -12,6 +12,8 @@ body {
   font-family: "Libre Baskerville", serif;
 }
 
+/*ROW*/
+/* Styles all content to into flexbox */
 .row {
   display: flex;
   justify-content: space-evenly;
@@ -34,6 +36,7 @@ body {
   text-align: justify;
 }
 
+/* Card image styles sizing and layout for images on cards */
 .card-image {
   padding-top: 30px;
   width: 60%;
@@ -80,8 +83,9 @@ body {
 
 /* CONTACT FORM */
 .contact-form {
-  padding: 200px;
+  padding: 10%;
   max-height: 500px;
+  min-width: 50px;
 }
 
 input[type=text], select, textarea {
@@ -197,7 +201,7 @@ input[type=submit]:hover {
 }
 
 /*END OF NAV*/
-/*Profile*/
+/*PROFILE*/
 .row {
   display: flex;
   justify-content: space-evenly;
@@ -217,9 +221,10 @@ input[type=submit]:hover {
   text-align: justify;
 }
 
+/*END OF PROFILE*/
 /*SKILLS*/
 .list {
-  /* BLOG LIST (INDEX PAGE) */
+  /*BLOG LIST (INDEX PAGE)*/
 }
 .list h2 {
   padding: 10px;
@@ -274,6 +279,7 @@ input[type=submit]:hover {
   height: 60px;
 }
 
+/*END OF BLOG LIST*/
 /* BLOGS */
 #Blogs .title-3 {
   font-family: "Libre Baskerville", sans-serif;
@@ -355,6 +361,7 @@ footer .tweet:hover {
   background-color: black;
 }
 
+/*END OF FOOTER*/
 /* responsive media queries */
 /* For mobile phones: */
 [class*=col-] {
@@ -565,6 +572,7 @@ footer .tweet:hover {
 
   .list .post img {
     border: 10px solid white;
+    max-height: none;
   }
 
   .title-3 {
@@ -582,6 +590,7 @@ footer .tweet:hover {
     top: 0px;
     right: 0;
     float: right;
+    .contact-form-padding: 50%;
   }
   #nav .icon {
     display: none;
