@@ -83,3 +83,33 @@ This includes:
 * Netlfiy (for deployment)
 * Trello (task managment)
   
+#### Trello Screenshots
+
+##### Day 1
+
+![Trello-screenshot](Screenshots/Trello-01.png)
+
+##### Day 2
+Only completed wireframes this day.
+
+![Trello-screenshot](Screenshots/Trello-02.png)
+
+##### Day 3
+
+![Trello-screenshot](Screenshots/Trello1.png)
+
+##### Day 4
+
+![Trello-screenshot](Screenshots/Trello2.png)
+
+##### Day 5
+
+![Trello-screenshot](Screenshots/Trello3.png)
+
+##### Day 6
+
+![Trello-screenshot](Screenshots/Trello4.png)
+
+##### Day 7
+
+![Trello-screenshot](Screenshots/Trello5.png)
