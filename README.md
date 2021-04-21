@@ -31,7 +31,55 @@ Current features include:
 
 ### Screenshots
 
+#### Home
+
+![Home](Screenshots/Home1.png)
+![Home](Screenshots/Home2.png)
+
+#### Blog
+
+![Blog](Screenshots/Blog1.png)
+![Blog](Screenshots/Blog2.png)
+
+#### Resume
+
+![Resume](Screenshots/Resume1.png)
+![Resume](Screenshots/resume2.png)
+
+#### Contact
+
+![Contact](Screenshots/contact1.png)
+![Contact](Screenshots/contact2.png)
+
+#### Footer
+
+![Footer](Screenshots/footer.png)
+
+
+#### Mobile
+
+![Mobile-Home](Screenshots/home-mobile.png)
+![Mobile-Contact](Screenshots/contact-mobile.png)
+![Mobile-Nav](Screenshots/mobile-nav.png)
+
 ### Target Audience
+
+The target audience for the portfolio is classmates, teachers, friends, family and potential employers.
 
 ### Tech Stack
 
+To create this website there was a combination of software tools, languages and resources used.
+
+This includes:
+* HTML
+* CSS
+* SASS
+* Markdown
+* Git
+* GitHub
+* Unsplash.com (for any images used)
+* CodePen.com (for the foundation of my Footer HTML/CSS)
+* W3Schools (key learning resource)
+* Netlfiy (for deployment)
+* Trello (task managment)
+  
