@@ -1,3 +1,147 @@
+commit 40cedd2eacd97afa9b660180f1d17ea378d59292
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 21 14:27:47 2021 +1000
+
+    fix broken footer links
+
+commit 301fd32ff4a4e163d708afe351eb97bd6b536866
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 21 14:25:37 2021 +1000
+
+    generate and add SRI hashes
+
+commit 6b067d6d3d6d23da4dc9b18d59f0cacd988e4e59
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 21 14:09:57 2021 +1000
+
+    adding trello screenshots to README and XML sitemap
+
+commit d9f698b223ff28b5e1a235f3f06357dc3063191a
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 21 12:46:46 2021 +1000
+
+    readme updated
+
+commit 7ff4a70fec0ebd69a64859016b6cea0f5551fce2
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 21 12:30:12 2021 +1000
+
+    change resume file specification
+
+commit 0308341224c1b9f894ac4d2ea5e9985dc6bfc7fd
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 21 12:27:16 2021 +1000
+
+    add JS file
+
+commit ff16b15e6522a71bd857b8ee6796cd8ba1180ffa
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 21 12:22:42 2021 +1000
+
+    adjust contact, change file structure again for deployment
+
+commit 752d5c4971b4a354184763629a9dc1efaee3676c
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Tue Apr 20 10:29:23 2021 +1000
+
+    restructure files
+
+commit 8154575155178a858198554b12983c38edebf483
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Tue Apr 20 10:25:11 2021 +1000
+
+    add contact form
+
+commit a4c4ed2af5a47ff14662da35f68a671eb0c78925
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Mon Apr 19 16:47:30 2021 +1000
+
+    adjust image sizes for mobile viewing
+
+commit 53f011ce18b23395256812dc81b3886e463d54d9
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Mon Apr 19 16:15:56 2021 +1000
+
+    change file structure
+
+commit e033310e2336d5c59b6226a940df933f0f08d038
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Mon Apr 19 14:43:06 2021 +1000
+
+    design changes (colours etc), adjust footer styling, tidy content on resume page
+
+commit 28ff20cddbf3252abcbddd13aff6d6e1f0224057
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Mon Apr 19 10:42:18 2021 +1000
+
+    layout refinement
+
+commit 46e3008525d7c741202def10c8e6b133d8618ed8
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Thu Apr 15 20:12:14 2021 +1000
+
+    optimise image sizes
+
+commit 54cf8ea0a9c7ea3292820d785c30feb58aec8b58
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Thu Apr 15 17:55:52 2021 +1000
+
+    create nav bar and add to each page
+
+commit b28dfc2bcc92f05d312d633d7156632fe2d01f20
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Thu Apr 15 09:49:13 2021 +1000
+
+    create contact page and add details
+
+commit 57421b1fe00c2ba5f5f1783a0ac23688d413bae8
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Thu Apr 15 07:59:36 2021 +1000
+
+    adding blog posts
+
+commit ac073ce5493232ae8886b15668df448f78455caa
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 14 16:19:38 2021 +1000
+
+    layout further improvements - partciularly desktop nav bar
+
+commit fd5f8af8e81695935105358fceb4572aa7c0d574
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 14 13:25:22 2021 +1000
+
+    nav links configuration, tablet and desktop responsiveness
+
+commit f65150c9d907414557fb406b19a517c07c24c183
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 14 10:30:21 2021 +1000
+
+    tablet responsiveness
+
+commit 462c4c89d32085354bd2c626676fbe3b57a87835
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Tue Apr 13 13:04:35 2021 +1000
+
+    drop down menu configured and structure of about / skills section implemented
+
+commit 8870f7def9b58942225e236e5599f4381f301fba
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Mon Apr 12 14:12:34 2021 +1000
+
+    restructure page
+
+commit f72401e56f1858954364756d56c3f1646acc259e
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Thu Apr 8 12:32:44 2021 +1000
+
+    basic HTML put in
+
+commit 25ba19e4771d122a81d9735bc22ce351d593583b
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Tue Apr 6 17:19:35 2021 +1000
+
+    adding log file
+
 commit beac3432260035ba5d9bad20500bf125448dc26d
 Author: hannahgmacca <hannahgmacca@gmail.com>
 Date:   Tue Apr 6 14:37:17 2021 +1000
