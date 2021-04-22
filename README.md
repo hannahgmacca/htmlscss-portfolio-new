@@ -110,6 +110,3 @@ Only completed wireframes this day.
 
 ![Trello-screenshot](Screenshots/Trello4.png)
 
-##### Day 7
-
-![Trello-screenshot](Screenshots/Trello5.png)
