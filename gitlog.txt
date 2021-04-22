@@ -1,3 +1,15 @@
+commit 9a65e4c53f501ff1e1870bb9c8fdf66a5c2cec76
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Thu Apr 22 12:46:48 2021 +1000
+
+    move js into own folder
+
+commit 48887f53e13faf89c2f56a88f6183a4f414d5ce1
+Author: hannahgmacca <hannahgmacca@gmail.com>
+Date:   Wed Apr 21 14:29:29 2021 +1000
+
+    generate gitlog.txt
+
 commit 40cedd2eacd97afa9b660180f1d17ea378d59292
 Author: hannahgmacca <hannahgmacca@gmail.com>
 Date:   Wed Apr 21 14:27:47 2021 +1000
