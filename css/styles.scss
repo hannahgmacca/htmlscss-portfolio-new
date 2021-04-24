@@ -149,7 +149,7 @@ body {
       font-size: 1.4em;
       color:#6FA8DC;
       font-family: 'DM Sans', sans-serif;
-      padding: 0 0 10px 20px;
+      padding: 0 0 10px 10px;
     }
 
     .title-3 {
@@ -422,6 +422,10 @@ body {
         min-height: 70%; 
         margin: 0 15%; 
         width: 70% 
+      }
+
+      #contacts .contact-detail {
+        padding-left: 10%;
       }
         
       #skills p{font-size: 1.7em;}
